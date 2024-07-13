@@ -6,7 +6,7 @@
     <title>Unity WebGL Player | Ittera</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=540 height=960 tabindex="-1" style="width: 540px; height: 960px; background: #FFFFFF"></canvas>
+    <canvas id="unity-canvas" width=450 height=800 tabindex="-1" style="width: 450px; height: 800px; background: #FFFFFF"></canvas>
     <script src="Build/ittera-app.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -25,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/ittera-app.data.gz",
-        frameworkUrl: "Build/ittera-app.framework.js.gz",
-        codeUrl: "Build/ittera-app.wasm.gz",
+        dataUrl: "Build/ittera-app.data",
+        frameworkUrl: "Build/ittera-app.framework.js",
+        codeUrl: "Build/ittera-app.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Ittera",
